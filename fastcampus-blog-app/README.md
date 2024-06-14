@@ -1,3 +1,5 @@
+react는 처음 프로젝트 처음 생성 시 .gitignore 파일(git ignore)에 추가하면 node_modules 등 변경 내용을 ignore 하여 편하다.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
