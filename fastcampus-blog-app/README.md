@@ -5,6 +5,7 @@ git 올리기 전에 자격증명이 잘 되어 있는지 체크
 git checkout -b feature/2-2 하여 git push함  
 git checkout -b feature/2-3 하여 git push함
 git pull feature/2-3
+git checkout -b feature/2-4 하여 git push함
 
 # Getting Started with Create React App
 
