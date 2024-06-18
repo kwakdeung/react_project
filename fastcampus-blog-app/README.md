@@ -6,6 +6,7 @@ git checkout -b feature/2-2 하여 git push함
 git checkout -b feature/2-3 하여 git push함
 git pull feature/2-3
 git checkout -b feature/2-4 하여 git push함
+git checkout -b feature/2-5 하여 git push함
 
 # Getting Started with Create React App
 
