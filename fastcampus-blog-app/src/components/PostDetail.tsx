@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { PostProps } from "./PostList";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "firebaseApp";
+import Loader from "./Loader";
 
 export default function PostDetail() {
   const [post, setPost] = useState<PostProps | null>(null);
@@ -45,7 +46,7 @@ export default function PostDetail() {
                 삭제
               </div>
               <div className="post__edit">
-                <Link to={`/posts/edit/1`}>수정</Link>
+                <Link to={`/posts/edit/${post?.id}`}>수정</Link>
               </div>
             </div>
             <div className="post__text post__text--pre-wrap">
@@ -53,7 +54,7 @@ export default function PostDetail() {
             </div>
           </div>
         ) : (
-          ""
+          <Loader />
         )}
       </div>
     </>
