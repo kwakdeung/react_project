@@ -12,6 +12,7 @@ git checkout -b feature/2-6 하여 git push함
 git branch --set-upstream-to=origin/feature/2-6
 git pull feature/2-6
 git checkout -b feature/2-7 하여 git push함
+git checkout -b feature/2-8 하여 git push함
 
 # Getting Started with Create React App
 
