@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, FirebaseApp, getApp } from "firebase/app";
 import "firebase/auth";
-import { getFirestore} from "firebase/firestore"
+import { getFirestore } from "firebase/firestore";
 
 export let app: FirebaseApp;
 // TODO: Add SDKs for Firebase products that you want to use
@@ -14,13 +14,13 @@ const firebaseConfig = {
   projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENTER_ID,
-  appId: process.env.REACT_APP_ID
+  appId: process.env.REACT_APP_ID,
 };
 
 try {
-  app = getApp("app")
-} catch (e) { 
-  app = initializeApp(firebaseConfig, "app")
+  app = getApp("app");
+} catch (e) {
+  app = initializeApp(firebaseConfig, "app");
 }
 
 // Initialize Firebase
