@@ -2,6 +2,8 @@ react는 처음 프로젝트 처음 생성 시 .gitignore 파일(git ignore)에 
 
 git 올리기 전에 자격증명이 잘 되어 있는지 체크
 
+2. 블로그 앱 프로젝트 완료
+
 git checkout -b feature/2-2 하여 git push함  
 git checkout -b feature/2-3 하여 git push함
 git branch --set-upstream-to=origin/feature/2-3
@@ -14,7 +16,7 @@ git pull feature/2-6
 git checkout -b feature/2-7 하여 git push함
 git checkout -b feature/2-8 하여 git push함
 git checkout -b feature/2-9 하여 git push함
-git checkout -b feature/2-10 하여 git push함
+git checkout -b feature/2-10
 
 # Getting Started with Create React App
 
