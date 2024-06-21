@@ -105,7 +105,7 @@ export default function LoginForm() {
         <input
           type="submit"
           value="로그인"
-          className="form__btn--submit"
+          className="form__btn-submit"
           disabled={error?.length > 0}
         />
       </div>

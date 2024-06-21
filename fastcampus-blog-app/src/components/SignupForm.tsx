@@ -112,7 +112,7 @@ export default function SignupForm() {
         <input
           type="submit"
           value="회원가입"
-          className="form__btn--submit"
+          className="form__btn-submit"
           disabled={error?.length > 0}
         />
       </div>
