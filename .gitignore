@@ -1,0 +1,9 @@
+/build
+/node_modules
+*.lock
+/zip
+*.zip
+/internal/zip
+.env
+.env.development
+.env.production
