@@ -18,10 +18,6 @@ git checkout -b feature/2-8 하여 git push함
 git checkout -b feature/2-9 하여 git push함
 git checkout -b feature/2-10
 
-git checkout -b feature/3-2
-~ git pull origin feature/3-2
-git checkout -b feature/3-3
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
