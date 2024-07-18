@@ -3,6 +3,7 @@ git checkout -b feature/3-2
 git checkout -b feature/3-3
 git checkout -b feature/3-4
 git checkout -b feature/3-5
+git checkout -b feature/3-6
 
 # Getting Started with Create React App
 
