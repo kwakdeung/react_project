@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   getAuth,
   createUserWithEmailAndPassword,
-  signInWithPopup,
-  GoogleAuthProvider,
-  GithubAuthProvider,
+  // signInWithPopup,
+  // GoogleAuthProvider,
+  // GithubAuthProvider,
 } from "firebase/auth";
 import { app } from "firebaseApp";
 import { toast } from "react-toastify";
@@ -71,36 +71,36 @@ export default function SignupForm() {
     }
   };
 
-  const onClickSocialLogin = async (e: any) => {
-    const {
-      target: { name },
-    } = e;
+  // const onClickSocialLogin = async (e: any) => {
+  //   const {
+  //     target: { name },
+  //   } = e;
 
-    let provider;
-    const auth = getAuth(app);
+  //   let provider;
+  //   const auth = getAuth(app);
 
-    if (name === "google") {
-      provider = new GoogleAuthProvider();
-    }
+  //   if (name === "google") {
+  //     provider = new GoogleAuthProvider();
+  //   }
 
-    if (name === "github") {
-      provider = new GithubAuthProvider();
-    }
+  //   if (name === "github") {
+  //     provider = new GithubAuthProvider();
+  //   }
 
-    await signInWithPopup(
-      auth,
-      provider as GithubAuthProvider | GoogleAuthProvider
-    )
-      .then((result) => {
-        console.log(result);
-        toast.success("로그인 되었습니다.");
-      })
-      .catch((error) => {
-        console.log(error);
-        const errorMessage = error?.message;
-        toast?.error(errorMessage);
-      });
-  };
+  //   await signInWithPopup(
+  //     auth,
+  //     provider as GithubAuthProvider | GoogleAuthProvider
+  //   )
+  //     .then((result) => {
+  //       console.log(result);
+  //       toast.success("로그인 되었습니다.");
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       const errorMessage = error?.message;
+  //       toast?.error(errorMessage);
+  //     });
+  // };
 
   return (
     <form className="form form--lg" onSubmit={onSubmit}>
@@ -159,7 +159,7 @@ export default function SignupForm() {
           회원가입
         </button>
       </div>
-      <div className="form__block">
+      {/* <div className="form__block">
         <button
           type="button"
           name="google"
@@ -178,7 +178,7 @@ export default function SignupForm() {
         >
           Github으로 회원가입
         </button>
-      </div>
+      </div> */}
     </form>
   );
 }
