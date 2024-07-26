@@ -1,4 +1,5 @@
 import { initializeApp, FirebaseApp, getApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 export let app: FirebaseApp;
 
@@ -11,12 +12,14 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
 };
 
-try { 
+try {
   app = getApp("app");
 } catch (e) {
   app = initializeApp(firebaseConfig, "app");
 }
- 
+
 const firebase = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app);
 
 export default firebase;
