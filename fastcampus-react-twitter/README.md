@@ -1,22 +1,8 @@
-react는 처음 프로젝트 처음 생성 시 .gitignore 파일(git ignore)에 추가하면 node_modules 등 변경 내용을 ignore 하여 편하다.
-
-git 올리기 전에 자격증명이 잘 되어 있는지 체크
-
-2. 블로그 앱 프로젝트 완료
-
-git checkout -b feature/2-2 하여 git push함  
-git checkout -b feature/2-3 하여 git push함
-git branch --set-upstream-to=origin/feature/2-3
-git pull feature/2-3
-git checkout -b feature/2-4 하여 git push함
-git checkout -b feature/2-5 하여 git push함
-git checkout -b feature/2-6 하여 git push함
-git branch --set-upstream-to=origin/feature/2-6
-git pull feature/2-6
-git checkout -b feature/2-7 하여 git push함
-git checkout -b feature/2-8 하여 git push함
-git checkout -b feature/2-9 하여 git push함
-git checkout -b feature/2-10
+git checkout -b feature/3-2
+~ git pull origin feature/3-2
+git checkout -b feature/3-3
+git checkout -b feature/3-4
+git checkout -b feature/3-5
 
 # Getting Started with Create React App
 
